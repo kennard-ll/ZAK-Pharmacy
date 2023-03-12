@@ -1,12 +1,12 @@
 import React from "react";
 import Rectangle from "../../public/img/Rectangle.png"
-const Products = () => {
+const Products = (props) => {
     return ( 
         <>
-            <div className="goods w-[200px] mr-[10px] rounded-[12px] h-[260px] bg-[white] shadow-3xl  px-3">
-                <img className="w-[160px] " src={Rectangle} alt="" />
-                <p className="text-gray  mt-[15px] mb-[20px] text-[12px] ">Клексан шприц 4000 анти-Ха МЕ/0.4мл №10</p>
-                <h3 className="text-green font-bold text-[16px]" >160 000 сум</h3>
+            <div className="goods w-[176px] rounded-[15px] h-[238px] bg-[white] shadow-3xl  px-3 mx-1 md:w-[306px] md:h-[400px] md:rounded-[30px]">
+                <div className="flex justify-center item-center"><img className="w-[160px] " src={Rectangle} alt="" /></div>
+                <p className="text-[#7E7E7E]  mt-[15px] mb-[20px] text-[12px] md:text-[20px]">{props.title}</p>
+                <h3 className="text-[#00AC73] font-bold text-[16px]" >{props.price}</h3>
             </div>
         </>
      );
